@@ -3,26 +3,58 @@
 }
 
 body {
+  color: #263036;
   margin: 0;
 }
 
-.socials {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 0.5em 0.5em;
-  font-size: 24px;
+.navbar{
+  position:relative;
+  width: 100%;
+  height: 50px;
 }
 
-.socials i {
-  padding-bottom: 0.8em;
+.navbar--container{
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #263036;
+  color: white;
+  display:flex;
+  border-radius: 5px 5px 100px 100px;
+}
+
+.navbar--container .btn{
   cursor: pointer;
+  padding: 0.5em 2em;
+  transition: all .2s ease;
+}
+
+.navbar--container .btn:hover{
+  background-color: white;
+  color: #263036;
+  border-radius: 5px;
+  text-decoration: underline;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -5px, rgba(0, 0, 0, 0.04) 0px 5px 5px -5px;
+}
+
+.navbar--container .btn:hover:first-child{
+  border-radius: 5px 5px 5px 100px;
+}
+
+.navbar--container .btn:hover:last-child{
+  border-radius: 5px 5px 100px 5px;
+}
+
+.navbar--container .btn:active{
+  background-color: hsl(203, 17%, 90%);
 }
 
 .wrapper {
-  justify-content: center;
-  max-width: 1024px;
-  margin: 0 auto;
+  width: 960px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .information {
@@ -38,8 +70,8 @@ body {
 .information--profile-img {
   position: relative;
   border-radius: 50%;
-  width: 100%;
-  height: auto;
+  height: 60vh;
+  width: auto;
 
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
@@ -51,17 +83,21 @@ body {
   justify-content: center;
 }
 
+.information--info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 .information--text h1{
-  font-size: 3em;
+  font-size: 2.5vw;
 }
 
 .information--text p{
-  font-size: 1em;
-}
-
-.information--text span{
-  font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.4vw;
+  line-height: 1.5;
 }
 
 .information--text--call-to-action{
@@ -75,9 +111,10 @@ body {
   padding: 1em 2em;
   border-radius: 50px;
   cursor: pointer;
-  border: 1px solid black;
+  background-color: #263036;
+  color: white;
   transition: all .2s ease;
-  font-size: 16px;
+  font-size: 1.25em;
   width: 40%;
 
   display: flex;
@@ -89,5 +126,23 @@ body {
   width: 45%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   color: white;
-  background-color: black;
+  border: rgba(250, 208, 44, 0.2);
+  text-decoration: underline;
+}
+
+.information--text--call-to-action .btn:last-child{
+  background-color: #5491BC;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0.5em 0.5em;
+  font-size: 24px;
+}
+
+.socials i {
+  padding-bottom: 0.8em;
+  cursor: pointer;
 }
