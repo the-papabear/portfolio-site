@@ -7,51 +7,53 @@ body {
   margin: 0;
 }
 
-.navbar{
-  position:relative;
+.navbar {
+  position: relative;
   width: 100%;
   height: 50px;
   z-index: 1;
 }
 
-.navbar--container{
-  position:absolute;
+.navbar--container {
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   background-color: #263036;
   color: white;
-  display:flex;
+  display: flex;
   border-radius: 5px 5px 100px 100px;
 }
 
-.navbar--container .btn{
+.navbar--container .btn {
   cursor: pointer;
   padding: 0.5em 2em;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
-.navbar--container .btn:hover{
+.navbar--container .btn:hover {
   background-color: white;
   color: #263036;
   border-radius: 5px;
   text-decoration: underline;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -5px, rgba(0, 0, 0, 0.04) 0px 5px 5px -5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -5px,
+    rgba(0, 0, 0, 0.04) 0px 5px 5px -5px;
 }
 
-.navbar--container .btn:hover:first-child{
+.navbar--container .btn:hover:first-child {
   border-radius: 5px 5px 5px 100px;
 }
 
-.navbar--container .btn:hover:last-child{
+.navbar--container .btn:hover:last-child {
   border-radius: 5px 5px 100px 5px;
 }
 
-.navbar--container .btn:active{
+.navbar--container .btn:active {
   background-color: hsl(203, 17%, 90%);
 }
 
 .main-container {
-  width: 960px;
+  max-width: 960px;
+  height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -65,15 +67,15 @@ body {
   height: 100vh;
 }
 
-.information--profile-img--container{
+.information--profile-img--container {
   padding-right: 5em;
 }
 
 .information--profile-img {
   position: relative;
   border-radius: 50%;
-  height: 60vh;
-  width: auto;
+  width: 20vw;
+  height: auto;
 
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
@@ -85,7 +87,7 @@ body {
   justify-content: center;
 }
 
-.information--info{
+.information--info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,45 +95,47 @@ body {
   text-align: center;
 }
 
-.information--text h1{
+.information--text h1 {
   font-size: 2.5vw;
 }
 
-.information--text p{
+.information--text p {
   font-size: 1.4vw;
   line-height: 1.5;
 }
 
-.information--text--call-to-action{
+.information--text--call-to-action {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-.information--text--call-to-action .btn{
+.information--text--call-to-action .btn {
   margin-top: 2.4em;
   padding: 1em 2em;
   border-radius: 50px;
   cursor: pointer;
   background-color: #263036;
   color: white;
-  transition: all .2s ease;
-  font-size: 1.25em;
-  width: 40%;
+  transition: all 0.2s ease;
+  font-size: 1vw;
+  width: 11rem;
+  height: auto;
 
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
-.information--text--call-to-action .btn:hover{
+.information--text--call-to-action .btn:hover {
   width: 45%;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   color: white;
   border: rgba(250, 208, 44, 0.2);
   text-decoration: underline;
 }
 
-.information--text--call-to-action .btn:last-child{
-  background-color: #5491BC;
+.information--text--call-to-action .btn:last-child {
+  background-color: #5491bc;
 }
