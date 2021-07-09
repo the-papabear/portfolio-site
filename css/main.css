@@ -1,18 +1,27 @@
-.about-section-container{
-    border-top: 1px solid black;
-    background-color: blue;
-}
-
-/* This is the footer section with the social buttons that I'll add:
-.socials {
+.about{
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 0.5em 0.5em;
-  font-size: 24px;
+  flex-direction: column;
 }
 
-.socials i {
-  padding-bottom: 0.8em;
-  cursor: pointer;
-} */
+.svg-container{
+  position: relative;
+}
+
+.board-text-container{
+  font-family: 'Fredericka the Great';
+  font-size: 40px;
+  color: white;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.board-text-container span{
+  visibility: hidden;
+}
