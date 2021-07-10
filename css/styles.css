@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
+  position: relative;
   color: #263036;
   margin: 0;
 }
@@ -26,8 +28,16 @@ body {
 
 .navbar--container .btn {
   cursor: pointer;
-  padding: 0.5em 2em;
+  padding: 1em 2em;
   transition: all 0.2s ease;
+}
+
+.navbar--container .btn a:link,
+.navbar--container .btn a:visited,
+.information--text--call-to-action .btn a:link,
+.information--text--call-to-action .btn a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 .navbar--container .btn:hover {
@@ -51,32 +61,38 @@ body {
   background-color: hsl(203, 17%, 90%);
 }
 
-.main-container {
+.container {
   max-width: 960px;
-  height: auto;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .information {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 .information--profile-img--container {
-  padding-right: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
 .information--profile-img {
   position: relative;
   border-radius: 50%;
-  width: 20vw;
   height: auto;
-
+  width: 75%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
@@ -84,24 +100,30 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .information--info {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
+  width: 95%;
 }
 
 .information--text h1 {
-  font-size: 2.5vw;
+  font-size: 42px;
 }
 
 .information--text p {
-  font-size: 1.4vw;
+  font-size: 24px;
   line-height: 1.5;
+}
+
+.information--text .information--info .hello {
+  margin-top: 0;
 }
 
 .information--text--call-to-action {
@@ -118,9 +140,8 @@ body {
   background-color: #263036;
   color: white;
   transition: all 0.2s ease;
-  font-size: 1vw;
-  width: 11rem;
-  height: auto;
+  font-size: 18px;
+  width: 40%;
 
   display: flex;
   justify-content: center;

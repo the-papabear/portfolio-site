@@ -1,1 +1,14 @@
-console.log('This is the beginning of a great site. Keep at it!');
+const boardLetters = document.querySelector('.board-text-container').querySelectorAll('span');
+
+let i = 0;
+const animation = function(){
+    setTimeout(() => {
+        boardLetters[i].style.visibility='visible';
+        i++;
+        if(i < boardLetters.length){
+            animation();
+        }
+    }, 100)
+}
+
+animation();
