@@ -1,60 +1,66 @@
 #chalk {
-  animation: write 3s infinite linear;
+  animation: write 4.1s linear;
 }
 
 @keyframes write {
   0% {
-    transform: translate(0%);
-  }
-  10% {
-    transform: translate(-50%, -45%);
-  }
-  15% {
-    transform: translateY(-45%);
-  }
-  20% {
-    transform: translateY(-50%);
-  }
-  25% {
-    transform: translateY(-45%);
-  }
-  30% {
-    transform: translateY(-50%);
-  }
-  35% {
-    transform: translateY(-45%);
-  }
-  40% {
-  }
-  45% {
-    transform: translateY(-45%);
-  }
-  50% {
-  }
-  55% {
-    transform: translateY(-45%);
-  }
-  60% {
-  }
-  65% {
-    transform: translateY(-45%);
-  }
-  70% {
-  }
-  75% {
-    transform: translateY(-45%);
-  }
-  80% {
-  }
-  85% {
-    transform: translateY(-45%);
-  }
-  90% {
-  }
-  95% {
-    transform: translateY(-45%);
-  }
-  100% {
-    transform: translate(25%, -45%);
-  }
+    transform:initial;
+    }
+    10% {
+    transform:translate(-37%, -50%);
+    }
+    15% {
+   transform:translate(-33%, -45%); 
+    }
+    20% {
+   transform:translate(-30%, -50%); 
+    }
+    25% {
+    transform:translate(-27%, -45%);
+    }
+    30% {
+    transform:translate(-25%, -50%);
+    }
+    35% {
+    transform:translate(-20%, -45%);
+    }
+    40% {
+    transform:translate(-15%, -50%);
+    }
+    45% {
+    transform:translate(-10%, -45%);
+    }
+    50% {
+    transform:translate(-5%, -50%);
+    }
+    55% {
+    transform:translate(-0%, -45%);
+    }
+    60% {
+    transform:translate(3%, -50%);
+    }
+    65% {
+       transform:translate(5%, -45%); 
+    }
+    70% {
+    transform:translate(10%, -50%);
+    }
+    75% {
+       transform:translate(13%, -45%); 
+    }
+    80% {
+    transform:translate(15%, -50%);
+    }
+    85% {
+    transform:translate(20%, -45%);
+    }
+    90% {
+    transform:translate(23%, -50%);
+    }
+    95% {
+        transform: translate(27%, -45%);
+    }
+    100% {
+        transform: initial;
+    }
 }

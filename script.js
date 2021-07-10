@@ -9,6 +9,6 @@ const animation = function(){
             animation();
         }
     }, 100)
-}
+};
 
 animation();

@@ -7,10 +7,12 @@ body {
   position: relative;
   color: #263036;
   margin: 0;
+  font-family: 'Volkorn', serif;
 }
 
 .navbar {
-  position: relative;
+  position: sticky;
+  top:0;
   width: 100%;
   height: 50px;
   z-index: 1;
