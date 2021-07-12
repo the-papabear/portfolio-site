@@ -1,4 +1,5 @@
 * {
+  /* border: 2px solid red; */
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -48,7 +49,7 @@ body {
   border-radius: 5px;
   text-decoration: underline;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -5px,
-    rgba(0, 0, 0, 0.04) 0px 5px 5px -5px;
+  rgba(0, 0, 0, 0.04) 0px 5px 5px -5px;
 }
 
 .navbar--container .btn:hover:first-child {
@@ -81,6 +82,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.information--img--text{
+  display:flex;
 }
 
 .information--profile-img--container {
@@ -134,24 +140,24 @@ section {
   justify-content: space-between;
   width: 100%;
 }
-.information--text--call-to-action .btn {
-  margin-top: 2.4em;
+.information--text--call-to-action .btn,
+.contact .btn { 
   padding: 1em 2em;
   border-radius: 50px;
   cursor: pointer;
   background-color: #263036;
   color: white;
   transition: all 0.2s ease;
-  font-size: 18px;
-  width: 40%;
+  font-size: 1.1rem;
+  width: 15rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.information--text--call-to-action .btn:hover {
-  width: 45%;
+.information--text--call-to-action .btn:hover,
+.contact .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   color: white;
@@ -161,4 +167,11 @@ section {
 
 .information--text--call-to-action .btn:last-child {
   background-color: #5491bc;
+}
+
+.contact-me a,
+.contact-me a:link,
+.contact-me a:visited{
+  color: white;
+  text-decoration: none;
 }
