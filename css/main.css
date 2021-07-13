@@ -5,7 +5,7 @@
 }
 
 .title {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 800;
   padding-top: 0.5em;
   text-transform: uppercase;
@@ -13,7 +13,6 @@
 
 .svg-container {
   position: relative;
-  /* margin: 10em 0;   */
 }
 
 .board-text-container {
@@ -35,7 +34,32 @@
   visibility: hidden;
 }
 
-.contact {
+.contact,
+.contact-via-mail,
+.contact-via-socials {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact .socials i {
+  padding-right: 0.5em;
+  font-size: 32px;
+  transition: all 0.1s linear;
+  color: #202020;
+}
+
+.contact .socials a:link,
+.contact .socials a:visited {
+  text-decoration: none;
+}
+
+.contact .socials i:hover {
+  transform: scale(1.3);
+  color: black;
+}
+
+.contact .copyright {
+  justify-items: flex-end;
 }
