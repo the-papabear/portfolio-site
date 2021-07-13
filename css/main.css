@@ -1,36 +1,41 @@
-.about{
+.about {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.about--text{
-  font-size: 42px;
+.title {
+  font-size: 32px;
   font-weight: 800;
   padding-top: 0.5em;
   text-transform: uppercase;
 }
 
-.svg-container{
+.svg-container {
   position: relative;
   /* margin: 10em 0;   */
 }
 
-.board-text-container{
+.board-text-container {
   font-family: 'Fredericka the Great', cursive;
   font-size: 40px;
   color: white;
 
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.board-text-container span{
+.board-text-container span {
   visibility: hidden;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
 }
